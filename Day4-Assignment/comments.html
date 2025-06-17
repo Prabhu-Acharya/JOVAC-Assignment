@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <title>Nested Comment Section</title>
     <style>
-        .comments .comment p {
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .comments {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .comment, .reply {
+            border-left: 2px solid #ccc;
+            padding-left: 15px;
+            margin: 10px 0;
+        }
+
+        .comment p {
             font-style: italic;
         }
 
         .reply {
-            background-color: lightblue;
+            background-color: #e0f0ff;
         }
 
         .reply p {
             font-weight: bold;
-            margin-left: 30px;
         }
     </style>
 </head>
@@ -24,6 +36,9 @@
             <p>First comment</p>
             <div class="reply">
                 <p>Reply to first comment</p>
+                <div class="reply">
+                    <p>Nested reply</p>
+                </div>
             </div>
         </div>
         <div class="comment">
