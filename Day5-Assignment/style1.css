@@ -1,0 +1,12 @@
+div.knowMoreBtn:hover {
+ background-color: darkorange;
+}
+a:visited {
+color: white;
+}
+a:active {
+color: black;
+}
+a:link {
+color: white;
+}
