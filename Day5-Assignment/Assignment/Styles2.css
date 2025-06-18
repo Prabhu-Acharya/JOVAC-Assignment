@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5fcff;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.product-info img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-info img:hover {
+  transform: scale(1.05);
+}
+
+.info-text {
+  max-width: 500px;
+  margin: 10px;
+}
+
+.info-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.info-text button {
+  background-color: #2c5364;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.info-text button:hover {
+  background-color: #0f2027;
+}
+
+.features {
+  background: #e0f7fa;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.features ul {
+  list-style: none;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.testimonials {
+  background: #f1f8ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  background-color: #203a43;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-info {
+    flex-direction: column;
+  }
+
+  .info-text h2 {
+    font-size: 1.5em;
+  }
+
+  .header h1 {
+    font-size: 2.2em;
+  }
+}
