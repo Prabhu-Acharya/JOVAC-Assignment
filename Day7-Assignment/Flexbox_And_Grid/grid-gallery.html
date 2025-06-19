@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .gallery-container {
+      width: 900px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+    .gallery-container img {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #ccc;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 1">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 2">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 3">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 4">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 5">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 6">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 7">
+    <img src="https://via.placeholder.com/200" alt="Gallery Image 8">
+  </div>
+</body>
+</html>

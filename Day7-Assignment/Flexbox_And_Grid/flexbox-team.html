@@ -2,19 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Image Gallery</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Meet the Team</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .team-container {
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .team-card {
+      width: 220px;
+      background: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+      text-align: center;
+      transition: box-shadow 0.3s;
+    }
+    .team-card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .team-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .team-card h3 {
+      margin: 10px 0 5px;
+    }
+    .team-card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <section class="gallery-container">
-    <img src="https://via.placeholder.com/200" alt="Gallery 1">
-    <img src="https://via.placeholder.com/200" alt="Gallery 2">
-    <img src="https://via.placeholder.com/200" alt="Gallery 3">
-    <img src="https://via.placeholder.com/200" alt="Gallery 4">
-    <img src="https://via.placeholder.com/200" alt="Gallery 5">
-    <img src="https://via.placeholder.com/200" alt="Gallery 6">
-    <img src="https://via.placeholder.com/200" alt="Gallery 7">
-    <img src="https://via.placeholder.com/200" alt="Gallery 8">
-  </section>
+  <div class="team-container">
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Team Member 1">
+      <h3>John Doe</h3>
+      <p>Frontend Developer</p>
+      <p>Loves building clean UIs and solving problems with JavaScript.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Team Member 2">
+      <h3>Jane Smith</h3>
+      <p>Backend Developer</p>
+      <p>Expert in APIs, databases, and server-side logic.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Team Member 3">
+      <h3>Alex Ray</h3>
+      <p>UI/UX Designer</p>
+      <p>Passionate about user-centered design and clean interfaces.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Team Member 4">
+      <h3>Riya Patel</h3>
+      <p>DevOps Engineer</p>
+      <p>Automates everything and ensures smooth deployment pipelines.</p>
+    </div>
+  </div>
 </body>
 </html>
