@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grade Evaluator</title>
+</head>
+<body>
+  <script>
+    let marks = prompt("Enter your marks (0-100):");
+    marks = Number(marks);
+
+    if (isNaN(marks) || marks < 0 || marks > 100) {
+      alert("Invalid input! Please enter a number between 0 and 100.");
+    } else {
+      if (marks >= 90) {
+        alert("Grade: A\nExcellent!");
+      } else if (marks >= 75) {
+        alert("Grade: B\nGreat job!");
+      } else if (marks >= 60) {
+        alert("Grade: C\nGood effort.");
+      } else if (marks >= 40) {
+        alert("Grade: D\nYou passed.");
+      } else {
+        alert("Grade: F\nBetter luck next time.");
+      }
+    }
+  </script>
+</body>
+</html>
