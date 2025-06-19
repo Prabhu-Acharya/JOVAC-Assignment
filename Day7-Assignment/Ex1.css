@@ -14,3 +14,23 @@
 }
 
 /* write your css here */
+.item-1 {
+ flex: 2;
+ order: 2;
+}
+.item-2 {
+ flex: 1;
+ order: 1;
+}
+.item-3 {
+ flex: 2;
+ order: 3;
+}
+.item-4 {
+ flex: 1;
+ order: 4;
+}
+.item-5 {
+ flex: 2;
+ order: 5;
+}
